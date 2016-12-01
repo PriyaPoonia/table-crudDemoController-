@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HTML Basics</title>
+<script type="text/javascript">
+	//var a= 'Priya' ;             // global  varaiable
+
+	//creating student object                     & creating collection with[]
+	
+function validate() {
+		var username= document.registration.username.value;
+		var regusername = /^[A-Z]{1}[a-z]{1,}$/ ;                 // shortcut of regular expression
+		//var regusername = new RegExp(^[A-Z]{1}[a-z]{1,}$) ;
+		console.log(regusername.test(username))
+		return true;
+		
+	}
+
+	//prompt('enter your name here:');
+													//alert('hey');
+													//alert(window['a']);                  //alert(a), alert(window.a) other methods for accessing global variable: return the type of data
+													// console.log(typeof a)
+</script>
+<style>
+
+/*global selector*/
+* {
+	padding: 0;
+	margin: 0;
+}
+/*element selector*/
+div
+{
+float: left;
+padding : 5px;
+margin : 5px;
+height : 200px;
+width : 317px;
+border : 2px solid #ff0000;
+}
+/*id selector*/
+#demo3
+{
+color : #00ff00;
+}
+#demo1, demo4
+{
+color : #0000ff;
+}
+/*class selector*/
+blue
+{
+color: #0000ff;
+}
+
+div>ul>li
+{
+list-style-type: none;
+}
+#demo3>ul>li
+{
+padding : 5px;
+width: 307px;
+background-color: #757575;
+color: #ffffff;
+}
+
+</style>
+</head>
+<body>
+	<div id="demo1" class blue>this is a div1</div>
+	<div id="demo2">this is a div2</div>
+	<div id="demo3">this is a div3
+	<ul>
+	<li>Listitem1</li>
+	<li>Listitem2</li>
+	<li>Listitem3</li>
+	
+	</ul>
+	</div>
+	
+	<div id="demo4">this is a div4</div>
+
+</body>
+</html>
